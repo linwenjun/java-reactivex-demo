@@ -21,6 +21,9 @@ public class Main {
         OperatorOfReactiveX.mapDemo4();
         OperatorOfReactiveX.mapDemo5();
         OperatorOfReactiveX.mapDemo6();
+
+        HttpRequestWithReactiveX.get();
+        HttpRequestWithReactiveX.post();
     }
 
     private static void standObserver() {
