@@ -48,5 +48,17 @@ public class OperatorOfReactiveX {
         });
     }
 
+    public static void mapDemo6() {
+        Observable.from(new Integer[] {1, 2, 3, 4, 5}).map(s -> {
+            return s * 2;
+        }).doOnNext(s -> {
+            System.out.println(s);
+        }).filter(s->{
+            return s > 5;
+        }).subscribe(s1 -> {
+            System.out.println(s1);
+        });
+    }
+
 
 }
